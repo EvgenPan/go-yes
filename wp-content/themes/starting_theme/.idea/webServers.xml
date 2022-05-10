@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="9cac2593-3ee0-4e5e-90fc-f429093f3471" name="imms" url="http://wedid.website">
+        <fileTransfer rootFolder="/home/mywebsite/web/immsi.wedid.website/public_html" accessType="SFTP" host="wedid.website" port="22" sshConfigId="e0855623-5b7e-488a-a8d9-7b8596789fdf" sshConfig="imms">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

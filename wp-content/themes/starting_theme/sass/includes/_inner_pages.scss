@@ -1,0 +1,351 @@
+/*PAGE 404*/
+.not_found{
+  background-color: $brand-green;
+  min-height: 490px;
+  position: relative;
+  overflow: hidden;
+  background-image: url("/wp-content/uploads/2022/05/Trafficcone9-1.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+  border-radius: 10px;
+  .content_hero{
+    max-width: 610px;
+    p{
+      max-width: 420px;
+      color: $white;
+    }
+  }
+  //&:before{
+  //  content: "";
+  //  background-image: url("/wp-content/uploads/2022/05/Trafficcone9-1.svg");
+  //  width: 100%;
+  //  height: 100%;
+  //  max-width: 800px;
+  //  position: absolute;
+  //  bottom: 0;
+  //  right: -76px;
+  //  background-repeat: no-repeat;
+  //  background-size: cover;
+  //}
+}
+@include _media-small-down() {
+  .border_none{
+    border-radius: 0;
+  }
+}
+
+/*INNER PAGE TOP SECTION*/
+.block_hero {
+  .top_section{
+    background-color: $brand-green;
+    min-height: 490px;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+    border-radius: 10px;
+    .content_hero{
+      h1, .h1{
+        font-weight: 400;
+      }
+      max-width: 610px;
+      .subtitle{
+        max-width: 470px;
+        color: $white;
+      }
+    }
+.title_w_full{
+  max-width: 950px;
+}
+    @include _media-small-down(){
+      border-radius: 0;
+    }
+  }
+
+}
+.fw-400{
+  font-weight: 400;
+}
+/*PRODUCT TOP SECTION*/
+.block_hero_inner{
+.top_section_inner{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  min-height: 490px;
+  @include _media-md-down(){
+   padding-bottom: 30px;
+  }
+  @include _media-small-down(){
+    border-radius: 0;
+  }
+}
+.row_wrapper{
+  .col_right_side{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .wrapper_content{
+    background-color: $brand-green;
+    min-height: 490px;
+    min-width: 520px;
+    padding-left: 45px;
+    padding-right: 45px;
+    color: #fff;
+    @include _media-md-down(){
+      min-height: auto;
+      min-width: auto;
+      padding-left: 35px;
+      padding-right: 35px;
+      margin-bottom: 20px;
+    }
+    .top_lable{
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+    h1{
+      color: $white;
+    }
+  }
+  .wrapper_btn{
+    min-width: 345px;
+    display: inline-block;
+    @include _media-xs-down(){
+      min-width: auto;
+      width: 100%;
+    }
+    .btn_main{
+      width: 100%;
+    }
+  }
+}
+}
+/*RESOURCES PAGE*/
+.row_list_resources{
+  .col_list_r{
+    @include _media-md-down(){
+    margin-bottom: 55px;
+    }
+  }
+  .list_xlc{
+    &:after{
+      content: "";
+      position: absolute;
+      top: -40px;
+      left: 25px;
+      width: 108px;
+      height: 108px;
+      background-image: url("/wp-content/uploads/2022/05/free-icon-xls-337958-1.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      @include _media-small-down(){
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+  }
+  .list_pdf{
+    &:after{
+      content: "";
+      position: absolute;
+      top: -40px;
+      left: 25px;
+      width: 108px;
+      height: 108px;
+      background-image: url("/wp-content/uploads/2022/05/free-icon-xls-337958-2.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      @include _media-small-down(){
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+  }
+  .list_doc{
+    &:after{
+      content: "";
+      position: absolute;
+      top: -40px;
+      left: 25px;
+      width: 108px;
+      height: 108px;
+      background-image: url("/wp-content/uploads/2022/05/free-icon-xls-337958-3.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      @include _media-small-down(){
+        width: 80px;
+        height: 80px;
+      }
+    }
+    .acrobat_link{
+      position: absolute;
+      bottom: 30px;
+      left: 50px;
+      width: 260px;
+      height: 125px;
+      img{
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .wrapper_list{
+    background: #F9F9F9;
+    border-radius: 10px;
+    padding-right: 40px;
+    padding-left: 55px;
+    height: 100%;
+min-height: 400px;
+    .list{
+      position: relative;
+      i{
+      font-size: 14px;
+      color: $brand-lightgreen;
+      padding-right: 10px;
+        position: absolute;
+        top: 5px;
+        left: -25px;
+    }
+
+      a{
+        font-size: 16px;
+        color: $black;
+        text-transform: uppercase;
+        @include _media-small-down(){
+          font-size: 14px;
+        }
+
+      }
+    }
+
+  }
+  .list_doc .wrapper_list{
+    @include _media-md-down(){
+      padding-bottom: 165px;
+    }
+  }
+  .col_list_r:last-child{
+    margin-bottom: 0;
+  }
+}
+/*ABOUT US PAGE*/
+.about_us{
+  .wpb_content_element:last-child{
+    margin-bottom: 0!important;
+  }
+}
+.section_container_full {
+    max-width: 1540px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 10px;
+  @include _media-small-down(){
+    border-radius: 0;
+  }
+  .row_img_text{
+    display: flex;
+    flex-wrap: wrap;
+    .vc_column-inner{
+      & > .wpb_wrapper{
+        display: flex;
+        .wpb_single_image{
+          flex: 0 0 auto;
+          margin-right: 15px;
+        }
+      }
+    }
+    .col_img_text{
+      h5{
+        @include _media-small-down(){
+          max-width: 300px;
+        }
+      }
+      & > .vc_column-inner{
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+  }
+}
+/*PRODUCT CHILD PAGEs*/
+.row_list_info{
+  ul{
+    li{
+      display: flex;
+      align-items: center;
+      padding-right: 18px;
+      padding-left: 18px;
+      background-color: $brand-grey;
+      @media(max-width: 450px){
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      span{
+        color: $grey80;
+      }
+      span:first-child{
+        flex: 0 0 auto;
+        font-weight: 700;
+        width: 200px;
+        max-width: 200px;
+      }
+      span:last-child{
+       padding-left: 15px;
+      }
+    }
+  }
+
+}
+.wrapper_tel{
+  display: flex;
+  align-items: center;
+  @include _media-xs-down(){
+ flex-direction: column;
+  }
+  p{
+    margin-top: 0;
+  }
+  a{
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 20px;
+    i {
+      color: $brand-lightgreen;
+      margin-right: 10px;
+    }
+  }
+}
+.list_w_icons{
+  li{
+    padding-bottom: 15px;
+    position: relative;
+    padding-left: 30px;
+    &:after{
+      content: "";
+      width: 22px;
+      height: 25px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-image: url("/wp-content/uploads/2022/05/shield-check.svg");
+      background-repeat: no-repeat;
+    }
+  }
+  columns: 3;
+ @media (max-width: 450px){
+    columns: 1;
+  }
+}
+

@@ -1,0 +1,146 @@
+footer {
+  background-color: $brand-green;
+  color: white;
+
+  .footer_top_fluid{
+    border-bottom: 1px solid #d4d4d4;
+.row{
+  align-items: flex-start;
+  @include _media-lg-down() {
+    justify-content: center;
+  }
+  @include _media-md-down() {
+    justify-content: flex-start;
+  }
+}
+  .footer_logo {
+    img {
+      height: 100%;
+      width: auto;
+      @include _media-md-down() {
+       width: 100px;
+
+      }
+      }
+    @include _media-lg-down() {
+      max-width: 100%;
+      flex: 100%;
+      text-align: center;
+    }
+  }
+  .footer_menu {
+    li:not(:last-child){
+      padding-bottom: 16px;
+    }
+    a {
+      font-family: $family-base;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: $white;
+      &:hover {
+        color: $brand-yellow;
+      }
+      @include _media-big-down() {
+      }
+      @include _media-lg-down() {
+        font-size: 15px;
+      }
+      @include _media-md-down() {
+        font-size: 14px;
+      }
+    }
+    @include _media-xs-down() {
+    display: block;
+      li{
+        padding-right: 0;
+      }
+    }
+    .current-menu-item {
+      a{
+        color: $brand-yellow;
+      }
+    }
+  }
+.footer_left {
+  display: flex;
+  justify-content: center;
+  li:not(:last-child){
+    padding-bottom: 16px;
+  }
+  @include _media-md-down() {
+    justify-content: flex-start;
+  }
+}
+.footer_center{
+  display: flex;
+  align-items: center;
+  li:first-child{
+    a{
+      &:hover{
+        color: unset;
+      }
+    }
+  }
+  li:not(:first-child){
+    a{
+      text-transform: capitalize;
+      color: $grey60;
+      font-weight: 500;
+      line-height: 1.4;
+      &:hover{
+        color: $brand-yellow;
+      }
+    }
+  }
+  }
+  .footer_right{
+    li:first-child{
+      a{
+        &:hover{
+          color: unset;
+        }
+      }
+    }
+    li:not(:first-child){
+      a{
+        text-transform: capitalize;
+        color: $grey60;
+        font-weight: 500;
+        line-height: 1.4;
+        display: flex;
+        align-items: center;
+        &:hover{
+          color: $brand-yellow;
+        }
+        i{
+          padding-right: 8px;
+          color: $brand-lightgreen;
+        }
+      }
+    }
+  }
+  }
+.footer_bottom_fluid{
+  text-align: center;
+  .footer_bottom{
+    p{
+      color:$grey60;
+      font-size: 12px;
+      font-family: $family-base;
+      a{
+        color:$grey60;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+  .col-menu-f{
+    @include _media-small-down(){
+      padding-left: 0;
+    }
+  }
+}
